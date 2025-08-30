@@ -2,92 +2,67 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Assine já - Cineflick Card</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-
-<!-- Styles principais -->
-<link rel="stylesheet" href="https://oficialcineflick.com/wp-content/litespeed/css/66978d0581799eea14d229166e271b0d.css?ver=7491b" />
-
-<!-- jQuery -->
-<script src="https://oficialcineflick.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"></script>
-
-<!-- Scripts essenciais Elementor -->
-<script src="https://oficialcineflick.com/wp-content/litespeed/js/c8eccf7be14f9bba21fdd94fe2c94067.js?ver=9598e" defer></script>
-
-<!-- COMENTADO: Bloqueio de domínio e redirecionamentos -->
-<!--
-<script>
-if(window.location.hostname !== "oficialcineflick.com") {
-    window.location.href = "https://oficialcineflick.com";
-}
-</script>
--->
-
+<style>
+  body { margin:0; font-family: Arial, sans-serif; background:#f5f5f5; color:#333; }
+  header { background:#fff; padding:20px; text-align:center; box-shadow:0 2px 5px rgba(0,0,0,0.1); }
+  header img { max-width:300px; height:auto; }
+  nav { margin-top:10px; }
+  nav a { margin:0 10px; color:#333; text-decoration:none; font-weight:bold; }
+  section { padding:40px 20px; text-align:center; }
+  .button { display:inline-block; padding:15px 30px; background:#ff0000; color:#fff; text-decoration:none; font-weight:bold; border-radius:5px; margin-top:20px; }
+  footer { background:#222; color:#fff; padding:20px; text-align:center; }
+  iframe { width:100%; max-width:800px; height:450px; border:none; margin-top:20px; }
+</style>
 </head>
-<body class="home wp-singular page-template-default page page-id-1690 elementor-default elementor-template-canvas">
+<body>
 
-<div class="elementor elementor-1690">
+<header>
+  <img src="https://oficialcineflick.com/wp-content/uploads/2024/12/LOGO-4-1024x241.webp" alt="Cineflick Card Logo">
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#planos">Planos</a>
+    <a href="#contato">Contato</a>
+  </nav>
+</header>
 
-    <!-- Seção: Header -->
-    <section class="elementor-section elementor-top-section">
-        <div class="elementor-container elementor-column-gap-default">
-            <div class="elementor-column elementor-col-100">
-                <div class="elementor-widget-wrap">
-                    <!-- Logo -->
-                    <div class="elementor-element elementor-widget-image">
-                        <div class="elementor-widget-container">
-                            <img width="800" height="188" src="https://oficialcineflick.com/wp-content/uploads/2024/12/LOGO-4-1024x241.webp" alt="Cineflick Logo" />
-                        </div>
-                    </div>
-                    <!-- Botão Assine agora -->
-                    <div class="elementor-element elementor-widget-button">
-                        <div class="elementor-widget-container">
-                            <a class="elementor-button elementor-button-link" href="#valor">
-                                <span class="elementor-button-text">Assine agora</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<section id="sobre">
+  <h1>Assine agora e tenha acesso ilimitado!</h1>
+  <p>Mais de 2 mil canais, incluindo Netflix, Disney+, HBO Max e muito mais, por um preço acessível. Qualidade, estabilidade e suporte dedicado.</p>
+  <a href="#planos" class="button">Assine agora</a>
+</section>
 
-    <!-- Seção: Player -->
-    <section class="elementor-section elementor-top-section">
-        <div class="elementor-container elementor-column-gap-default">
-            <div class="elementor-column elementor-col-100">
-                <div class="elementor-widget-wrap">
-                    <div class="player-container">
-                        <iframe src="https://scripts.converteai.net/fa4b91bb-f0aa-4d8a-af45-c273f0c122ba/players/68a53bdcc31744b04d6ffa0b/v4/embed.html" width="100%" height="450" allowfullscreen></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<section id="planos">
+  <h2>Planos Disponíveis</h2>
+  <p>Escolha o plano que cabe no seu bolso e aproveite todos os conteúdos!</p>
+  <div>
+    <div style="display:inline-block; margin:10px; padding:20px; background:#fff; border-radius:10px; box-shadow:0 2px 5px rgba(0,0,0,0.1); width:200px;">
+      <h3>Mensal</h3>
+      <p>R$19,99 / mês</p>
+      <a href="#contato" class="button">Assinar</a>
+    </div>
+    <div style="display:inline-block; margin:10px; padding:20px; background:#fff; border-radius:10px; box-shadow:0 2px 5px rgba(0,0,0,0.1); width:200px;">
+      <h3>Anual</h3>
+      <p>R$199,99 / ano</p>
+      <a href="#contato" class="button">Assinar</a>
+    </div>
+  </div>
+</section>
 
-    <!-- Seção: Conteúdo -->
-    <section class="elementor-section elementor-top-section">
-        <div class="elementor-container elementor-column-gap-default">
-            <div class="elementor-column elementor-col-100">
-                <div class="elementor-widget-wrap">
-                    <!-- Exemplo de texto -->
-                    <div class="elementor-element elementor-widget-text-editor">
-                        <div class="elementor-widget-container">
-                            <p>Assine agora Conteúdo ilimitado por um valor que cabe no seu bolso! Tenha acesso a mais de 2 mil canais, incluindo Netflix, Disney+, HBO Max e mais.</p>
-                        </div>
-                    </div>
-                    <!-- Exemplo de imagem adicional -->
-                    <div class="elementor-element elementor-widget-image">
-                        <div class="elementor-widget-container">
-                            <img src="https://oficialcineflick.com/wp-content/uploads/2024/12/LOGO-4-1024x241.webp" alt="Imagem Secundária" width="600" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<section id="video">
+  <h2>Assista Agora</h2>
+  <iframe src="https://scripts.converteai.net/fa4b91bb-f0aa-4d8a-af45-c273f0c122ba/players/68a53bdcc31744b04d6ffa0b/v4/embed.html" allowfullscreen></iframe>
+</section>
 
-</div>
+<section id="contato">
+  <h2>Fale Conosco</h2>
+  <p>Entre em contato e tire suas dúvidas sobre assinatura e suporte.</p>
+</section>
+
+<footer>
+  &copy; 2025 Cineflick Card. Todos os direitos reservados.
+</footer>
 
 </body>
 </html>
@@ -149,7 +124,7 @@ Prepare-se para ter literalmente todos os acessos dos canais de esporte, futebol
 <img loading="lazy" decoding="async" width="246" height="246" src="https://oficialcineflick.com/wp-content/uploads/2025/08/FUTEBOL-04.webp" class="attachment-large size-large wp-image-1741" alt="" srcset="https://oficialcineflick.com/wp-content/uploads/2025/08/FUTEBOL-04.webp 246w, https://oficialcineflick.com/wp-content/uploads/2025/08/FUTEBOL-04-150x150.webp 150w" sizes="(max-width: 246px) 100vw, 246px" /></div></div><div class="elementor-element elementor-element-972379d elementor-invisible elementor-widget elementor-widget-image" data-id="972379d" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="image.default"><div class="elementor-widget-container">
 <img loading="lazy" decoding="async" width="246" height="246" src="https://oficialcineflick.com/wp-content/uploads/2025/08/FUTEBOL-03.webp" class="attachment-large size-large wp-image-1740" alt="" srcset="https://oficialcineflick.com/wp-content/uploads/2025/08/FUTEBOL-03.webp 246w, https://oficialcineflick.com/wp-content/uploads/2025/08/FUTEBOL-03-150x150.webp 150w" sizes="(max-width: 246px) 100vw, 246px" /></div></div><div class="elementor-element elementor-element-a65f687 elementor-invisible elementor-widget elementor-widget-image" data-id="a65f687" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="image.default"><div class="elementor-widget-container">
 <img loading="lazy" decoding="async" width="246" height="246" src="https://oficialcineflick.com/wp-content/uploads/2025/08/FUTEBOL-02.webp" class="attachment-large size-large wp-image-1739" alt="" srcset="https://oficialcineflick.com/wp-content/uploads/2025/08/FUTEBOL-02.webp 246w, https://oficialcineflick.com/wp-content/uploads/2025/08/FUTEBOL-02-150x150.webp 150w" sizes="(max-width: 246px) 100vw, 246px" /></div></div><div class="elementor-element elementor-element-29c1259 elementor-invisible elementor-widget elementor-widget-image" data-id="29c1259" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="image.default"><div class="elementor-widget-container">
-<img loading="lazy" decoding="async" width="246" height="246" src="https://oficialcineflick.com/wp-content/uploads/2025/08/FUTEBOL-01.webp" class="attachment-large size-large wp-image-1738" alt="" srcset="https://oficialcineflick.com/wp-content/uploads/2025/08/FUTEBOL-01.webp 246w, https://oficialcineflick.com/wp-content/uploads/2025/08/FUTEBOL-01-150x150.webp 150w" sizes="(max-width: 246px) 100vw, 246px" /></div></div></div></div></div><div class="elementor-element elementor-element-b230194 e-flex e-con-boxed elementor-invisible e-con e-parent" data-id="b230194" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;background_motion_fx_motion_fx_scrolling&quot;:&quot;yes&quot;,&quot;background_motion_fx_scale_effect&quot;:&quot;yes&quot;,&quot;background_motion_fx_scale_speed&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]},&quot;background_motion_fx_scale_range&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:{&quot;start&quot;:15,&quot;end&quot;:88}},&quot;animation&quot;:&quot;fadeIn&quot;,&quot;background_motion_fx_scale_direction&quot;:&quot;out-in&quot;,&quot;background_motion_fx_devices&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile_extra&quot;,&quot;mobile&quot;]}"><div class="e-con-inner"><div class="elementor-element elementor-element-c114267 elementor-widget-mobile__width-initial elementor-widget elementor-widget-heading" data-id="c114267" data-element_type="widget" data-widget_type="heading.default"><div class="elementor-widget-container"><h2 class="elementor-heading-title elementor-size-default">Com a CineFlick você assiste tudo quando e onde quiser!</h2></div></div><div class="elementor-element elementor-element-2e85238 elementor-widget-mobile__width-initial elementor-widget elementor-widget-text-editor" data-id="2e85238" data-element_type="widget" data-widget_type="text-editor.default"><div class="elementor-widget-container"><p data-start="59" data-end="227"><strong>Planos a partir de R$ 19,90/mês</strong><br />Cancele a qualquer momento</p></div></div><div class="elementor-element elementor-element-33d2c20 elementor-align-justify elementor-widget__width-initial btn elementor-widget elementor-widget-button" data-id="33d2c20" data-element_type="widget" data-widget_type="button.default"><div class="elementor-widget-container"><div class="elementor-button-wrapper">
+<img loading="lazy" decoding="async" width="246" height="246" src="https://oficialcineflick.com/wp-content/uploads/2025/08/FUTEBOL-01.webp" class="attachment-large size-large wp-image-1738" alt="" srcset="https://oficialcineflick.com/wp-content/uploads/2025/08/FUTEBOL-01.webp 246w, https://oficialcineflick.com/wp-content/uploads/2025/08/FUTEBOL-01-150x150.webp 150w" sizes="(max-width: 246px) 100vw, 246px" /></div></div></div></div></div><div class="elementor-element elementor-element-b230194 e-flex e-con-boxed elementor-invisible e-con e-parent" data-id="b230194" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;background_motion_fx_motion_fx_scrolling&quot;:&quot;yes&quot;,&quot;background_motion_fx_scale_effect&quot;:&quot;yes&quot;,&quot;background_motion_fx_scale_speed&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]},&quot;background_motion_fx_scale_range&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:{&quot;start&quot;:15,&quot;end&quot;:88}},&quot;animation&quot;:&quot;fadeIn&quot;,&quot;background_motion_fx_scale_direction&quot;:&quot;out-in&quot;,&quot;background_motion_fx_devices&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile_extra&quot;,&quot;mobile&quot;]}"><div class="e-con-inner"><div class="elementor-element elementor-element-c114267 elementor-widget-mobile__width-initial elementor-widget elementor-widget-heading" data-id="c114267" data-element_type="widget" data-widget_type="heading.default"><div class="elementor-widget-container"><h2 class="elementor-heading-title elementor-size-default">Com a BaltigoFlix você assiste tudo quando e onde quiser!</h2></div></div><div class="elementor-element elementor-element-2e85238 elementor-widget-mobile__width-initial elementor-widget elementor-widget-text-editor" data-id="2e85238" data-element_type="widget" data-widget_type="text-editor.default"><div class="elementor-widget-container"><p data-start="59" data-end="227"><strong>Planos a partir de R$ 19,90/mês</strong><br />Cancele a qualquer momento</p></div></div><div class="elementor-element elementor-element-33d2c20 elementor-align-justify elementor-widget__width-initial btn elementor-widget elementor-widget-button" data-id="33d2c20" data-element_type="widget" data-widget_type="button.default"><div class="elementor-widget-container"><div class="elementor-button-wrapper">
 <a class="elementor-button elementor-button-link elementor-size-sm" href="#valor">
 <span class="elementor-button-content-wrapper">
 <span class="elementor-button-text">Adquira o seu agora</span>
