@@ -1,21 +1,20 @@
 # Baltigo Ads
 
-Página comercial da rede Baltigo, publicada em https://qgbaltigo.github.io/Teste/.
+Landing page estática da Baltigo. Contato comercial direto: https://t.me/QGSuporteBot.
 
-## Estrutura
+## Arquivos
+- `index.html`: conteúdo, links e ícones SVG.
+- `styles.css`: composição visual original.
+- `refinements.css`: correções responsivas, logo e rodapé.
+- `script.js`: menu, filtros, demonstração de formatos e controle da faixa animada.
+- `assets/`: artes originais da rede.
 
-- `index.html`: página principal da Baltigo Ads, substituindo a antiga página Cineflick.
-- `styles.css`: identidade visual preto/vermelho e layout responsivo.
-- `script.js`: filtros de universos, demonstração de anúncio, menu móvel e preparação de resumo comercial.
-- `assets/`: artes da Baltigo em AVIF e favicon PNG, incluídos no repositório.
-- `.nojekyll`: publicação estática no GitHub Pages.
+Sem formulário, coleta de leads, rastreadores ou dependências JavaScript externas.
 
-Sem build, dependências de frontend ou fontes empacotadas. Para testar, execute `python -m http.server 8000` e abra http://localhost:8000.
+GitHub Pages: https://qgbaltigo.github.io/Teste/
 
-## Contato e dados
+## Dados
+Retrato de 24/09/2026: 1.241 canais/grupos, 453.576 membros somados e 7,6 milhões de visualizações nas amostras. Não representam pessoas únicas ou entrega garantida.
 
-O formulário prepara um resumo localmente para copiar e enviar ao @QGSuporte no Telegram. Não envia mensagens nem armazena dados automaticamente.
-
-Métricas estáticas fornecidas pela Baltigo, base de 24/09/2026: 1.241 canais e grupos, 453.576 membros somados e 7,6 milhões de visualizações nas amostras. Não representam pessoas únicas nem garantia de entrega de campanha.
-
-As imagens foram otimizadas para AVIF. HTML, CSS e JavaScript preservam o redesign entregue.
+## Verificação da revisão
+Layout e interações verificados em navegador local nas larguras 320, 360, 390, 430, 600, 760, 768, 1024, 1280, 1440 e 1920 px. Sem overflow horizontal, campos de formulário, ícones Unicode ou erros de JavaScript nos testes. Links comerciais direcionados a @QGSuporteBot.
