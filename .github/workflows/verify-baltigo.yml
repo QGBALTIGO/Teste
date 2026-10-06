@@ -1,0 +1,42 @@
+name: Verify Baltigo Ads
+on:
+  push:
+    branches: [main]
+    paths: ['index.html', 'styles.css', 'refinements.css', 'script.js', '.github/workflows/verify-baltigo.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  public-site:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Verify public page and assets
+        shell: python
+        run: |
+          import json, re, time, urllib.request, urllib.error
+          from urllib.parse import urljoin
+          failures = []
+          for site in ['https://qgbaltigo.github.io/Teste/', 'https://baltigo-ads.vercel.app/']:
+              try:
+                  request = urllib.request.Request(site + '?check=' + str(int(time.time())), headers={'User-Agent': 'Baltigo-Ads-Verification/1.0'})
+                  with urllib.request.urlopen(request, timeout=30) as response:
+                      html = response.read().decode('utf-8')
+                      status = response.status
+                  report = {'site': site, 'status': status, 'title': re.findall(r'<title>(.*?)</title>', html), 'forms': len(re.findall(r'<form\b', html)), 'contact': 'https://t.me/QGSuporteBot' in html, 'new_footer': 'footer-grid' in html, 'new_styles': 'refinements.css?v=3' in html}
+                  print('::notice title=Public page::' + json.dumps(report, ensure_ascii=False))
+                  if not (status == 200 and report['forms'] == 0 and report['contact'] and report['new_footer'] and report['new_styles']):
+                      failures.append(site)
+                      print('::error title=Unexpected public page::' + site + ' ' + html[:250].replace('\n', ' '))
+                      continue
+                  paths = sorted(set(re.findall(r'(?:src|href)="(assets/[^"#]+|styles\.css[^"#]*|refinements\.css[^"#]*|script\.js[^"#]*)"', html)))
+                  for path in paths:
+                      with urllib.request.urlopen(urljoin(site, path), timeout=30) as asset:
+                          assert asset.status == 200 and len(asset.read()) > 0, path
+                  print('::notice title=Asset verification::' + site + ' ' + str(len(paths)) + ' assets OK')
+              except Exception as exc:
+                  failures.append(site)
+                  print('::error title=Public verification failed::' + site + ' ' + str(exc).replace('\n', ' '))
+          if failures:
+              raise SystemExit('Failed: ' + ', '.join(failures))
+          print('Both public URLs and all referenced assets passed.')
